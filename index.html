@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <style>
+        /* 自定义悬浮入口的位置 */
+        #position_demo {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Hello Bot</h1>
+<div id="position_demo"></div>
+<script src="https://sf-cdn.coze.com/obj/unpkg-va/flow-platform/chat-app-sdk/0.1.0-beta.5/libs/oversea/index.js"></script>
+<script>
+    new CozeWebSDK.WebChatClient({
+      config: {
+        bot_id: '7425150560032587793',
+      },
+      componentProps: {
+        title: 'Coze',
+      },
+    });
+</script>
+</body>
+</html>
